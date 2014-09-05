@@ -29,6 +29,34 @@ Bam.  Third error.
 Okay.  I just installed the android sdk, so that's weird.  But whatever.  So, 
 	android
 Which brings up the android sdk manager.  I selected all of the 19.* build tools and install.
+Which was wrong.  
+Then I selected "Android 4.4.2 (API 19)" and install.
+Woo hoo!  That did it.
+
+At this point you can open and edit the project in xcode or eclipse.
+
+Build the project
+	cordova build
+	cordova build ios
+	cordova build android
+
+Run it!
+	cordova emulate android
+Error!
+	Error executing "adb devices": /bin/sh: adb: command not found
+A quick search tells me that I need to add platform-tools to my path.  I do that and try it again and....
+	No errors.  But the emulator doesn't open either. Weird.
+
+So, I started to do a bunch of stuff from this page in order to install an emulator and to configure a default emulator.
+http://cordova.apache.org/docs/en/3.5.0//guide_platforms_android_index.md.html#Android%20Platform%20Guide
+
+And now when I do 
+	corodva emulate android
+the emulator launches!
+
+For iOS I just opened the project in xCdoe and selected run.  It was fine.
+
+
 
 
 
