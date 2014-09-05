@@ -1,0 +1,7 @@
+The cordova project is located at http://cordova.apache.org
+
+You install cordova by running (on a mac)
+	sudo npm install -g cordova
+Note, there are some prerequisites.  You'll need node and git installed already.
+
+Bam.  Done.
