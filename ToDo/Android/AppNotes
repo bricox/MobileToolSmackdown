@@ -27,9 +27,12 @@ I created a Nexus 5 image...but I had to take random guesses to spec it out.
 
 
 HAX - Intel Hardware Accelerated Execution Manager
+https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager
 In order to make the emulator run faster, I installed HAX.
 There was an error in the installation process that said the Kernel Extension was not from a registered developer...but I plowed ahead and Android Studio told me HAX was working.
 
 So I ran the app...and got a blank screen. Wasn't sure what I should get though, so maybe that was progress.
+...after changing my AVD's skin, I saw the world "Android" on the screen as if the device was booting.  And the app log in android studio starting spitting out "Device Nexus_5 [emulator-5554] is online, waiting for processes to start up.." messages
+...but nothing happened. :(
 
-
+I finally discovered that I had to give some space to the SD Card in the AVD I created.
