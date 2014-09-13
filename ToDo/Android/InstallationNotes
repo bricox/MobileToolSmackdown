@@ -1,0 +1,27 @@
+
+I chose to use Android Studio instead of Eclipse.
+I made this choice for 2 reasons:
+  My previous experience has taught me that Eclipse can be very hard to use.  The was a few years ago, so perhaps it's better now
+  Google seems to be promoting the use of Android Studio.
+Note Android studio is still in beta.
+
+
+Prerequisites
+  JDK 1.6 or greater
+
+
+Downloaded Android Stuido Beta from https://developer.android.com/sdk/installing/studio.html#download
+
+After installation I was immediately notified of an update and installed it.  This was painless
+
+The Android Developer website told me I should download the latest SDK Tools and the Android Support Library and (optionally) the Google Play Services 
+
+To get to the menu that allowed me to download the SDK Tools, I had to create a new project.
+
+After the project loaded I found the SDK Manager.
+I found that a handful of SDK tools were already installed (including the latest Android SDK Tools, Android SDK Platform-tools and Android SDK Build-tools).
+There were several of the not installed components that were not that were checked as if to encourage me to install them.  This included some wearable and tv packages that I didn't want to install.
+
+I chose not to install anything additional right away, but to see what I had out of the box.
+
+

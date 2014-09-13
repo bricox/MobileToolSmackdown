@@ -1,0 +1,35 @@
+
+I went through the steps on this site as best I could.  The problem was that this tutorial is for Eclipse.  
+https://developer.android.com/training/basics/firstapp/index.html
+
+
+Open Android Studio
+
+Select "New Project..."
+
+I was prompted to make a phone/tablet app that targeted 4.0.3
+I could have chosen any of the 4.x versions or back to 3.x, but there wasn't an option to target 2.x
+
+There was also an option for targeting a wearables and tv, but I didn't explore those.
+
+I selected a Tabbed Activity to start.
+
+It took a while to setup the project because several dependencies were downloaded.  I'm not sure what all of these are.  These were installed automatically using the "gradle" build/packaging system.
+
+
+I tried to run the app right away but got an error.
+I had previously installed Xamarin and Android Developer found several Android Virtual Device's called "MonoForAndroid".  These were the only options.
+
+I had to create a new AVD...
+I was unable to create a new AVD before I installed CPU/AB Image...back to the Android SDK Manager.
+I installed the 4.4.2 Intel x86 Atom System Image
+I created a Nexus 5 image...but I had to take random guesses to spec it out.
+
+
+HAX - Intel Hardware Accelerated Execution Manager
+In order to make the emulator run faster, I installed HAX.
+There was an error in the installation process that said the Kernel Extension was not from a registered developer...but I plowed ahead and Android Studio told me HAX was working.
+
+So I ran the app...and got a blank screen. Wasn't sure what I should get though, so maybe that was progress.
+
+
