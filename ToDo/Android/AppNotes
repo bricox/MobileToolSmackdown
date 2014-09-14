@@ -36,3 +36,15 @@ So I ran the app...and got a blank screen. Wasn't sure what I should get though,
 ...but nothing happened. :(
 
 I finally discovered that I had to give some space to the SD Card in the AVD I created.
+
+
+
+Back go the app...
+Following the tutorial, I found the fragment_to_dos.xml file that contains the layout for the main fragement of the app.  I replaced it's contensts with a linear layout and then begain adding other elements to that linear layout
+
+After making some changes I got a rendering error within Android Studio.  I fixed it by changing android version in the rendering window from 4.4W (api 20) to 4.4.2 (api 19)
+
+The tutorials on https://developer.android.com/training/ seem pretty good.
+
+
+For the Todo app, I chose a master detail activity.

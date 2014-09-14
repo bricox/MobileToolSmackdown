@@ -25,3 +25,5 @@ There were several of the not installed components that were not that were check
 I chose not to install anything additional right away, but to see what I had out of the box.
 
 
+
+There is a pretty large list of plugins available for Android Studio...most importantly I found IdeaVim for adding vim key bindings.

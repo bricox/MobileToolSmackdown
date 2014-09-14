@@ -6,7 +6,12 @@
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="hello_world">Hello world!</string>
+    <string name="go_to_todos">ToDo List</string>
     <string name="action_settings">Settings</string>
     <string name="edit_message">A Hint!</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_display_message">A Message</string>
+    <string name="title_todo_list">Todos</string>
+    <string name="title_todo_detail">Todo Detail</string>
 
 </resources>
