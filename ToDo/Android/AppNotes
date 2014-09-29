@@ -47,4 +47,25 @@ After making some changes I got a rendering error within Android Studio.  I fixe
 The tutorials on https://developer.android.com/training/ seem pretty good.
 
 
-For the Todo app, I chose a master detail activity.
+For the Todo app, I chose a blank activity and found some ListView examples online.  No one of the exampels I found was complete.  I had to use several of them.
+
+
+In general I like the xml markup for defining the UI.  There's a learning curve but it seems relatively sane and unsurprising.
+The tooling in Android Studio is also good for discovering and setting properties on UI elements. It's also somewhat useful for getting an idea of what things will look like.
+The XML editor also has good intellisense.
+I took the approach of writing the XML by hand and only switching to the GUI for discovering the properties of each UI element. 
+
+
+Creating a new activity should start with created the activity java class. Android Studio will create the layout xml file
+
+Units of measure 
+Android recommends using "dp" which is a density independent pixel.  See this post http://blog.edwinevans.me/?p=131
+
+
+After leaving the android emulator open for a while it started to slow down. Restarting helped.
+
+In order to get the EditText cursor to be white, I had to set the textCursorDrawable to @null...not obvious at all.
+Even then it was hard to see
+
+The debugger is decent, but a little slow.
+The controls are not obvious...for instance when at a breakpoint the "run" button will try to start up another instance of the application instead of resuming the current one.
