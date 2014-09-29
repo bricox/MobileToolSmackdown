@@ -69,3 +69,26 @@ Even then it was hard to see
 
 The debugger is decent, but a little slow.
 The controls are not obvious...for instance when at a breakpoint the "run" button will try to start up another instance of the application instead of resuming the current one.
+
+
+
+Adding a library
+For persisting data, I chose to use the google gson library.  That's when I started diving into the gradle build system.
+(This is a huge topic and I only explored enough to actually solve my problem.)
+
+My goal was to pull the gson dependency down from a central repository.  I discovered that the Maven Central repository is the "main" repo for java libraries and found gson on it.
+
+https://search.maven.org/
+gson is here: https://search.maven.org/#artifactdetails%7Ccom.google.code.gson%7Cgson%7C2.3%7Cjar
+
+I could not find a UI for managing dependencies.  It seems I must edit the build.gradle files for my project to add them.
+This document was kinda helpful, but seemed to be outdated as the structure of the build.gradle files don't exactly match what was in my project.  It did lead me to http://www.gradle.org/docs/current/dsl/org.gradle.api.artifacts.dsl.DependencyHandler.html though
+
+I added the this to the allprojects -> repositories section of the build.gradle file in the root of the application.
+  mavenCentral() 
+And then added this to the dependencies in the build.gradle file under the src directory
+  compile 'com.google.code.gson:gson:2.3'
+
+Then a "Build -> Make Project" downloaded the dependency and placed it under my External Libraries.
+
+

@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,6 +31,8 @@ public class TodoList extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_list);
 
+        TodoRepository.initFileAccessorContext(this);
+
         todoListView = (ListView) findViewById((R.id.todoList));
         todoListAdapter = new TodoListAdapter( TodoRepository.getInstance().getTodos() );
         todoListView.setAdapter(todoListAdapter);
@@ -39,6 +42,12 @@ public class TodoList extends Activity {
     protected void onResume() {
         super.onResume();
         todoListAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    protected void onDestroy() {
+        TodoRepository.getInstance().save();
+        super.onDestroy();
     }
 
     public void goToDetails(View view) {
@@ -75,7 +84,7 @@ public class TodoList extends Activity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             ViewHolder holder = null;
             if (convertView == null) {
                 convertView = mInflater.inflate(R.layout.todorow, null);
@@ -87,8 +96,15 @@ public class TodoList extends Activity {
                 holder = (ViewHolder) convertView.getTag();
             }
 
-            holder.doneCheckBox.setChecked(mTodos.get(position).getDone());
             holder.doneCheckBox.setText(mTodos.get(position).getText());
+            holder.doneCheckBox.setChecked(mTodos.get(position).getDone());
+            holder.doneCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
+                    mTodos.get(position).setDone(checked);
+                }
+            });
+
             holder.goToDetailsButton.setTag(position);
 
             return convertView;
@@ -99,5 +115,4 @@ public class TodoList extends Activity {
         public CheckBox doneCheckBox;
         public Button goToDetailsButton;
     }
-
 }
