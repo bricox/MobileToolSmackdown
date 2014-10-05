@@ -8,10 +8,14 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 
 
 public class TodoDetails extends Activity {
+
+    private Todo mTodo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +23,28 @@ public class TodoDetails extends Activity {
         setContentView(R.layout.activity_todo_details);
 
         int todoId = getIntent().getIntExtra("todoId", -1);
-        Todo todo = TodoRepository.getInstance().getTodos().get(todoId);
+        mTodo = TodoRepository.getInstance().getTodos().get(todoId);
 
-        initText(todo);
-        initDescription(todo);
+        initText(mTodo);
+        initDescription(mTodo);
+        initDone(mTodo);
+    }
+
+    public void deleteTodo(View view) {
+        TodoRepository.getInstance().removeTodo(mTodo);
+        finish();
+    }
+
+    private void initDone(final Todo todo) {
+        CheckBox done = (CheckBox) this.findViewById(R.id.edit_todo_done);
+        done.setChecked(todo.getDone());
+
+        done.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
+                todo.setDone(checked);
+            }
+        });
     }
 
     private void initText(final Todo todo) {

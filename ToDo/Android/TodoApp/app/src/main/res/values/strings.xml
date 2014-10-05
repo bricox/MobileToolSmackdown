@@ -9,4 +9,9 @@
 
     <string name="hint_todo_title">Title</string>
     <string name="hint_todo_description">Description</string>
+    <string name="button_todo_delete">Delete</string>
+    <string name="checkbox_todo_done">Done?</string>
+
+    <string name="hint_new_todo_title">New Todo</string>
+    <string name="plus_sign">+</string>
 </resources>

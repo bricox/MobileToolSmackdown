@@ -85,7 +85,9 @@ public class TodoRepository {
         }
     }
 
-    public ArrayList<Todo> getTodos() {
-        return mTodos;
+    public void removeTodo(Todo todoToRemove) {
+        mTodos.remove(todoToRemove);
     }
+
+    public ArrayList<Todo> getTodos() { return mTodos; }
 }

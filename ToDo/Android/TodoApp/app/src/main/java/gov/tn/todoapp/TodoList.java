@@ -14,6 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -45,9 +46,25 @@ public class TodoList extends Activity {
     }
 
     @Override
-    protected void onDestroy() {
+    protected void onPause() {
         TodoRepository.getInstance().save();
         super.onDestroy();
+    }
+
+    public void addTodo(View view) {
+        EditText newTodoEditText = (EditText) findViewById(R.id.new_todo_text);
+        String newTodoText = newTodoEditText.getText().toString();
+
+        newTodoEditText.setText("");
+
+        if (!newTodoText.trim().equals("")) {
+            TodoRepository
+                    .getInstance()
+                    .getTodos()
+                    .add(new Todo(newTodoText));
+
+            todoListAdapter.notifyDataSetChanged();
+        }
     }
 
     public void goToDetails(View view) {

@@ -7,6 +7,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/edit_todo_done"
+            android:text="@string/checkbox_todo_done"
+            android:textColor="#FFFFFFFF"
+            android:background="#FF444444"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="deleteTodo"
+            android:id="@+id/button_todo_delete"
+            android:text="@string/button_todo_delete"
+            android:textColor="#FFFFFFFF"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
     <EditText
         android:id="@+id/edit_todo_title"
         android:hint="@string/hint_todo_title"

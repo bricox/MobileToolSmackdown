@@ -1,14 +1,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".TodoList">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ff000000">
+
+        <EditText
+            android:id="@+id/new_todo_text"
+            android:hint="@string/hint_new_todo_title"
+            android:background="#FF555555"
+            android:textCursorDrawable="@null"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:paddingEnd="1dp"
+            android:paddingRight="1dp"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:onClick="addTodo"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold"
+            android:background="#FF222222"
+            android:text="@string/plus_sign"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#ff000000"
-        android:id="@+id/todoList"></ListView>
+        android:padding="10dp"
+        android:id="@+id/todoList"/>
 </LinearLayout>
 
