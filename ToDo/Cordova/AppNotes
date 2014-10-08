@@ -55,6 +55,8 @@ And now when I do
 the emulator launches!
 
 For iOS I just opened the project in xCdoe and selected run.  It was fine.
+	To "get cordova emulate ios" to work, in the ios sim by doing
+		"npm install -g ios-sim"
 
 
 

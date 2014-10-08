@@ -1,4 +1,9 @@
 /Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes.dex : \
+/Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$1.class \
+/Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$2.class \
+/Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$3.class \
+/Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar.class \
 /Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/tngovnerds/todo/BuildConfig.class \
 /Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/tngovnerds/todo/R$attr.class \
 /Users/jjct145/Development/Git/MobileToolSmackdown/ToDo/Cordova/todo/platforms/android/ant-build/classes/org/tngovnerds/todo/R$drawable.class \
