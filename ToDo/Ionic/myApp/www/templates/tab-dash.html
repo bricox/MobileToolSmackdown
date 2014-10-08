@@ -1,0 +1,19 @@
+<ion-view title="Dashboard" right-buttons="rightButtons">
+
+ <div class="bar bar-header">
+    <!-- New Task button-->
+    <button class="button icon ion-navicon" ng-click="createItem()"></button>
+ </div>
+ <ion-content has-header="true" padding="true">
+ <button class="button button-full button-positive" ng-click="createItem()">Add Task</button>
+    <ion-list>
+      <ion-item ng-repeat="todo in toDoList" type="item-text-wrap" href="#/tab/todo/{{todo}}">
+      <label class="checkbox">
+       		<input type="checkbox" ng-model="todo.complete" ng-click="clickComplete(todo)">
+     	</label>
+        {{todo.title}}
+        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
