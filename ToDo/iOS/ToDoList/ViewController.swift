@@ -11,7 +11,7 @@ let CHECKED_IMAGE = "checked.png"
 let UNCHECKED_IMAGE = "unchecked.png"
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var myTableView: UITableView
+    @IBOutlet var myTableView: UITableView!
     var todoItem = TodoItem.alloc();
     var items: NSMutableArray!
     
@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.items = self.todoItem.loadFromFile();
         
         let count = self.items == nil ? 0 : self.items!.count;
@@ -35,14 +35,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         // get the table cell
         var cell: UITableViewCell = self.myTableView.dequeueReusableCellWithIdentifier("TodoCell") as UITableViewCell
-        
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "TodoCell");
-        }
         
         // get the array object for the cell
         var item: NSArray? = self.items![indexPath.row] as? NSArray;
@@ -69,7 +65,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         checkBox.addTarget(self, action: "checkboxClicked:", forControlEvents: UIControlEvents.TouchUpInside);
         
         // display title
-        cell.textLabel.text = selectedItem.title;
+        cell.textLabel!.text = selectedItem.title;
         // add the button to the cell
         cell.contentView.addSubview(checkBox);
         
@@ -98,7 +94,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func isCurrentImageChecked(currentButton: UIButton) -> Bool {
-        if(currentButton.currentImage.isEqual(UIImage(named: CHECKED_IMAGE))) {
+        if(currentButton.currentImage!.isEqual(UIImage(named: CHECKED_IMAGE))) {
             return true;
         }
         else {

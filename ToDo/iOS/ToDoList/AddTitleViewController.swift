@@ -11,8 +11,8 @@ import QuartzCore
 
 class AddTitleViewController: UIViewController {
 
-    @IBOutlet strong var titleTextView: UITextView!
-    @IBOutlet strong var myLabel: UILabel!
+    @IBOutlet var titleTextView: UITextView!
+    @IBOutlet var myLabel: UILabel!
     var todoItem: TodoItem!
     
     override func viewDidLoad() {
