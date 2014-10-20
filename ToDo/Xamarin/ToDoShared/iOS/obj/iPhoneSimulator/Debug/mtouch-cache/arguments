@@ -1,0 +1,35 @@
+# Version: 8.2.0.207 (3bf072d)
+# [first argument, ignore] # /Users/jjct145/Development/Xamarin/ToDoShared/iOS/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.2.0.207/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/jjct145/Development/Xamarin/ToDoShared/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/jjct145/Development/Xamarin/ToDoShared/iOS/bin/iPhoneSimulator/Debug/ToDoSharediOS.app \
+	-r \
+	/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared/bin/Debug/ToDoShared.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/jjct145/Development/Xamarin/ToDoShared/packages/Xamarin.Forms.1.0.6186/lib/MonoTouch10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/jjct145/Development/Xamarin/ToDoShared/packages/Xamarin.Forms.1.0.6186/lib/MonoTouch10/Xamarin.Forms.Core.dll \
+	-r \
+	/Users/jjct145/Development/Xamarin/ToDoShared/packages/Xamarin.Forms.1.0.6186/lib/MonoTouch10/Xamarin.Forms.Xaml.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.0 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/jjct145/Development/Xamarin/ToDoShared/iOS/bin/iPhoneSimulator/Debug/ToDoSharediOS.exe \

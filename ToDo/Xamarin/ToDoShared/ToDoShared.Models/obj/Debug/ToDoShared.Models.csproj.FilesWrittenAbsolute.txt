@@ -1,0 +1,17 @@
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/ToDoShared.Models.dll.mdb
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/ToDoShared.Models.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/obj/Debug/ToDoShared.Models.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/obj/Debug/ToDoShared.Models.dll.mdb
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/Xamarin.Forms.Core.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/mscorlib.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Core.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Linq.Queryable.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Diagnostics.Tools.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.ComponentModel.EventBasedAsync.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Net.Primitives.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Net.Requests.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Net.NetworkInformation.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShared.Models/bin/Debug/System.Text.RegularExpressions.dll

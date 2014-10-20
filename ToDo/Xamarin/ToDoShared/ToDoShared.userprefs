@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoShared.Repository/ToDoRepository.cs">
+    <Files>
+      <File FileName="ToDoShared/App.cs" Line="31" Column="31" />
+      <File FileName="ToDoShared.Models/ToDoItem.cs" Line="1" Column="1" />
+      <File FileName="ToDoShared.Repository/ToDoRepository.cs" Line="4" Column="4" />
+      <File FileName="ToDoShared/MyPage.xaml" Line="28" Column="28" />
+      <File FileName="ToDoShared/MyPage.xaml.cs" Line="56" Column="56" />
+      <File FileName="ToDoShared/obj/Debug/MyPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="ToDoShared/ToDoItemDetail.xaml" Line="1" Column="1" />
+      <File FileName="ToDoShared/ToDoItemDetail.xaml.cs" Line="35" Column="35" />
+      <File FileName="ToDoShared/obj/Debug/ToDoItemDetail.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="ToDoShare.iOS.Files/MyFiles.cs" Line="14" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

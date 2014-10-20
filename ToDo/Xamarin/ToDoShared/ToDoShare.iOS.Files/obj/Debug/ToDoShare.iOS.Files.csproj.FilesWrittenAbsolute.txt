@@ -1,0 +1,5 @@
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShare.iOS.Files/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShare.iOS.Files/bin/Debug/ToDoShare.iOS.Files.dll.mdb
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShare.iOS.Files/bin/Debug/ToDoShare.iOS.Files.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShare.iOS.Files/obj/Debug/ToDoShare.iOS.Files.dll
+/Users/jjct145/Development/Xamarin/ToDoShared/ToDoShare.iOS.Files/obj/Debug/ToDoShare.iOS.Files.dll.mdb
