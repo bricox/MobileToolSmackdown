@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         checkBox.addTarget(self, action: "checkboxClicked:", forControlEvents: UIControlEvents.TouchUpInside);
         
         // display title
-        cell.textLabel!.text = selectedItem.title;
+        cell.textLabel.text = selectedItem.title;
         // add the button to the cell
         cell.contentView.addSubview(checkBox);
         

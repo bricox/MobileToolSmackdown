@@ -26,3 +26,32 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-10-08 10:03:50.982 ToDoList[1612:42237] [CDVTimer][TotalPluginStartup] 13.185024ms
 2014-10-08 10:03:51.037 ToDoList[1612:42237] Resetting plugins due to page load.
 2014-10-08 10:03:51.133 ToDoList[1612:42237] Finished load of: file:///Users/jjct145/Library/Developer/CoreSimulator/Devices/08637555-2834-4EC5-A485-80CB9C8663F5/data/Containers/Bundle/Application/66B29CCB-21D8-4999-97CF-235432CA7F06/ToDoList.app/www/index.html
+2014-10-22 18:04:25.632 ToDoList[648:11810] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jjct145/Library/Developer/CoreSimulator/Devices/AA60165B-6926-46E4-A8AF-73905AFF83A5/data/Containers/Data/Application/B3E24786-FF4F-4E41-ABB6-4173C6599D18/Library/Cookies/Cookies.binarycookies
+2014-10-22 18:04:25.732 ToDoList[648:11810] Multi-tasking -> Device: YES, App: YES
+2014-10-22 18:04:25.750 ToDoList[648:11810] Unlimited access to network resources
+2014-10-22 18:04:25.753 ToDoList[648:11810] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-10-22 18:04:26.237 ToDoList[648:11810] [CDVTimer][statusbar] 81.541002ms
+2014-10-22 18:04:26.238 ToDoList[648:11810] [CDVTimer][TotalPluginStartup] 81.766963ms
+2014-10-22 18:04:26.811 ToDoList[648:11810] Resetting plugins due to page load.
+2014-10-22 18:04:26.997 ToDoList[648:11810] Finished load of: file:///Users/jjct145/Library/Developer/CoreSimulator/Devices/AA60165B-6926-46E4-A8AF-73905AFF83A5/data/Containers/Bundle/Application/E8D8D2F7-82CB-4A8B-B937-89052517E241/ToDoList.app/www/index.html
+2014-10-22 19:45:34.542 ToDoList[648:47506] Terminating since there is no system app.
+2014-10-23 08:36:23.822 ToDoList[627:7937] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jjct145/Library/Developer/CoreSimulator/Devices/AA60165B-6926-46E4-A8AF-73905AFF83A5/data/Containers/Data/Application/D2EB80A5-2FBE-4382-9250-2A59F574A7EB/Library/Cookies/Cookies.binarycookies
+2014-10-23 08:36:23.887 ToDoList[627:7937] Multi-tasking -> Device: YES, App: YES
+2014-10-23 08:36:23.905 ToDoList[627:7937] Unlimited access to network resources
+2014-10-23 08:36:23.909 ToDoList[627:7937] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-10-23 08:36:24.337 ToDoList[627:7937] [CDVTimer][statusbar] 64.095020ms
+2014-10-23 08:36:24.337 ToDoList[627:7937] [CDVTimer][TotalPluginStartup] 64.234972ms
+2014-10-23 08:36:24.393 ToDoList[627:7937] Resetting plugins due to page load.
+2014-10-23 08:36:24.556 ToDoList[627:7937] Finished load of: file:///Users/jjct145/Library/Developer/CoreSimulator/Devices/AA60165B-6926-46E4-A8AF-73905AFF83A5/data/Containers/Bundle/Application/AFC105C9-6D37-4977-AFCB-0799FE1FEBE4/ToDoList.app/www/index.html
